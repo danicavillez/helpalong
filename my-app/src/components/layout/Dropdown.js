@@ -3,7 +3,7 @@ import React from 'react';
 class Dropdown extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { value: 'King'};
+        this.state = {value: 'King'};
         this.handleChange = this.handleChange.bind(this);
     }
 
@@ -14,11 +14,7 @@ class Dropdown extends React.Component {
     render() {
         return(
             <h2> What County are you located in? :
-            <select value={this.state.value} onChange={this.handleChange} classNameName="dropdown" id="county" defaultValue={this.state.value}>
-                    <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        County Name</button>
-                    <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        
+            <select value={this.state.value} onChange={this.handleChange}>
                         <option className="dropdown-item" value="Adams"> Adams</option>
                         <option className="dropdown-item" value="Asotin">Asotin</option>
                         <option className="dropdown-item" value="Benton">Benton</option>
@@ -57,7 +53,6 @@ class Dropdown extends React.Component {
                         <option className="dropdown-item" value="Whatcom">Whatcom</option>
                         <option className="dropdown-item" value="Whitman">Whitman</option>
                         <option className="dropdown-item" value="Yakima">Yakima</option>
-                    </div>
             </select>
             </h2>
         );

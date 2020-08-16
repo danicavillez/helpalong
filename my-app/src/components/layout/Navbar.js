@@ -14,13 +14,16 @@ export default function Navbar() {
                     <a className="nav-link" href="../">Home <span className="sr-only">(current)</span></a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Features</a>
+                    <a className="nav-link" href="../MentalHealth">Mental Health</a>
                 </li>
                 <li classNameName="nav-item">
-                    <a className="nav-link" href="#">Pricing</a>
+                    <a className="nav-link" href="../IllOrPhysicalHealth">Ill or Physical Health</a>
                 </li>
-                <li className="nav-item">
-                    <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <li classNameName="nav-item">
+                    <a className="nav-link" href="../Issues">Having an Issue With Someone</a>
+                </li>
+                <li classNameName="nav-item">
+                    <a className="nav-link" href="INeedResources">I Need Resources</a>
                 </li>
                 </ul>
             </div>

@@ -14,7 +14,7 @@ export default function LandingPage() {
                     <h5 className="card-title">What Is Happening?</h5>
                     <p className="card-text">which topic best describes your situation?</p>
                     <a href="/MentalHealth" className="btn btn-primary mx-1">Mental Health</a>
-                    <a href="#" className="btn btn-primary mx-1">Ill or Physically Hurt</a>
+                    <a href="/IllOrPhysicalHealth" className="btn btn-primary mx-1">Ill or Physically Health</a>
                     <a href="/Issues" className="btn btn-primary mx-1">Having an Issue With Someone</a>
                     <a href="/INeedResources" className="btn btn-primary mx-1">I Need Resources</a>
                 </div>
