@@ -5,37 +5,39 @@ import db from '../firebase';
 class INeedResources extends Component {
     constructor(props) {
         super(props);
-        this.state = {       
-            resources: []
-        };
+        this.state = {display: []};
+        this.GetData = this.GetData.bind(this);
     }
 
-    componentDidMount() {
-        
-    }
-
-    componentDidUpdate() {
-        this.GetData("mentalhealth");
-    }
-
-    GetData(collectionName) {
-        var resourceList = []
-        db.collection(collectionName)
+    GetData() {
+        let resourceList = []
+        console.log("mentalhealth");
+        db.collection("mentalhealth")
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
-             var text = JSON.stringify(doc.data());
-             console.log(text);
-             resourceList.push(text);
+            let text = JSON.stringify(doc.data());
+            resourceList.push(doc.data());
+            console.log("getting data:")
+            console.log(doc.data());
             });
+            console.log(resourceList);
         })
         .catch(function(error) {
             console.error("Error getting document: ", error);
         });
+    
+        this.setState({ display: resourceList }, () => {
+          console.log(this.state.display); });
+    }
+    
+    componentDidMount() {
+        this.GetData();
+    }
 
-        this.setState({ resources: resourceList });
-      }
-      
+    componentDidUpdate() {
+    }
+     
       GetDataFromDocument(collectionName, documentName) {
         db.collection(collectionName).doc(documentName)
         .get()
@@ -71,14 +73,31 @@ class INeedResources extends Component {
         });
     }
 
-    render() {
-        return (
+    render() {      
+        let resources = this.state.display;
+        console.log(resources);
+
+        return (          
             <div>
+                <h1>Food/Housing Resources</h1>  
+                <p></p>  
                 <Dropdown/>
-                <p>{this.state.resources}</p>
+                <p></p>  
+                <div className="card text-center">
+                    <div className="card-body">
+                    <h3 className="card-title">Resources</h3>
+                    {resources.map((resource, index) => (
+                        <p key={index}>{resource}</p>
+                    ))} 
+                    </div>
+                </div>
             </div>        
-        )
+        );
     }
+
+    /*
+    <Dropdown county={this.props.county} onChange={this.props.handleChange}/>
+    */
 }
 
 export default INeedResources;

@@ -22,7 +22,7 @@ export default function Navbar() {
                 <li className="nav-item">
                     <a className="nav-link" href="../Issues">Having an Issue With Someone</a>
                 </li>
-                <li classNameName="nav-item">
+                <li className="nav-item">
                     <a className="nav-link" href="INeedResources">Food/Housing Resources</a>
                 </li>
                 </ul>
