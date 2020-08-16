@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from './components/layout/Navbar';
 import LandingPage from './components/LandingPage';
-import MentalHealth from './components/MentalHealth';
 import Firebase from 'firebase';
 
 
@@ -10,7 +9,6 @@ function App() {
     <div className="App">
       <Navbar />
       <LandingPage />
-      <MentalHealth/>
     </div>
   );
 }
