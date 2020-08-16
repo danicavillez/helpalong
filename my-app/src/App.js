@@ -4,6 +4,7 @@ import Navbar from './components/layout/Navbar';
 import LandingPage from './components/LandingPage';
 import INeedResources from './components/INeedResources';
 import MentalHealth from './components/MentalHealth';
+import Issues from './components/Issues';
 import Firebase from 'firebase';
 
 
@@ -14,6 +15,7 @@ function App() {
         <Navbar />
         <Route path="/" exact component={LandingPage} />
         <Route path="/MentalHealth" exact component={MentalHealth} />
+        <Route path="/Issues" exact component={Issues} />
         <Route path="/INeedResources" exact component={INeedResources} />
         </div>
     </Router>   
