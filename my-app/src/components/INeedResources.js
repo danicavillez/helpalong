@@ -11,7 +11,7 @@ class INeedResources extends Component {
     }
 
     componentDidMount() {
-        this.GetData("mentalhealth");
+        
     }
 
     componentDidUpdate() {
