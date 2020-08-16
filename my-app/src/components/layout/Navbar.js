@@ -16,13 +16,13 @@ export default function Navbar() {
                 <li className="nav-item">
                     <a className="nav-link" href="../MentalHealth">Mental Health</a>
                 </li>
-                <li classNameName="nav-item">
+                <li className="nav-item">
                     <a className="nav-link" href="../IllOrPhysicalHealth">Ill or Physical Health</a>
                 </li>
-                <li classNameName="nav-item">
+                <li className="nav-item">
                     <a className="nav-link" href="../Issues">Having an Issue With Someone</a>
                 </li>
-                <li classNameName="nav-item">
+                <li className="nav-item">
                     <a className="nav-link" href="INeedResources">I Need Resources</a>
                 </li>
                 </ul>
