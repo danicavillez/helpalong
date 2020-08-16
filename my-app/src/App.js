@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/layout/Navbar';
-import LandingPage from './components/LandingPage';
+import LandingPage from './components/Pages/LandingPage';
+import INeedResources from './components/Pages/INeedResources'
 import Firebase from 'firebase';
 
 function App() {
