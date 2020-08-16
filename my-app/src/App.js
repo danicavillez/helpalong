@@ -1,15 +1,22 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
-import LandingPage from './components/Pages/LandingPage';
-import INeedResources from './components/Pages/INeedResources'
+import LandingPage from './components/LandingPage';
+import INeedResources from './components/INeedResources';
+import MentalHealth from './components/MentalHealth';
 import Firebase from 'firebase';
+
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <LandingPage />
-    </div>
+    <Router>
+        <div className="App">
+        <Navbar />
+        <Route path="/" exact component={LandingPage} />
+        <Route path="/MentalHealth" exact component={MentalHealth} />
+        <Route path="/INeedResources" exact component={INeedResources} />
+        </div>
+    </Router>   
   );
 }
 
