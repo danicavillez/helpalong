@@ -1,10 +1,13 @@
 import React from 'react';
+import Navbar from './components/layout/Navbar';
+import LandingPage from './components/LandingPage';
 import Firebase from 'firebase';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Navbar />
+      <LandingPage />
     </div>
   );
 }
