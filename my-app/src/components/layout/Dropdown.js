@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Dropdown() {
     return (
-        <div class="dropdown">
+        <div class="dropdown" id="county">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 County Name</button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">

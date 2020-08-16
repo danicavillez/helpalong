@@ -17,10 +17,9 @@ export default function LandingPage() {
                         <a href="/MentalHealth" className="btn btn-primary mx-1">Mental Health</a>
                         <a href="#" className="btn btn-primary mx-1">Ill or Physically Hurt</a>
                         <a href="#" className="btn btn-primary mx-1">Having an Issue With Someone</a>
-                        <a href="#" className="btn btn-primary mx-1">I Need Resources</a>
+                        <a href="/INeedResources" className="btn btn-primary mx-1">I Need Resources</a>
                     </div>
                 </div>
             </div>
-
     )
 }
