@@ -22,10 +22,10 @@ function App() {
 
 function GetData(collectionName) {
   var db = Firebase.firestore();
-  db.collection(collectionName)
+  db.collection("mentalhealth")
     .then(function(querySnapshot) {
       querySnapshot.forEach(function(doc) {
-        // doSomething(doc.data());
+       console.log(doc.data());
       });
     })
     .catch(function(error) {
